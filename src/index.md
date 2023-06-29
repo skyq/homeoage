@@ -1,5 +1,5 @@
 ---
-title: Hello
+title: (ノಠ益ಠ)ノ
 layout: "base.njk"
 ---
 
