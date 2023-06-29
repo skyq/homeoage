@@ -42,3 +42,5 @@ pwd = keyring.get_password("may_may", login)
 ```
 
 Если пароль не найден вернет `None`
+
+О том, зачем мне это понадобилось в [статье](/posts/rpa/1С_schedule_start_stop_run_epf)
