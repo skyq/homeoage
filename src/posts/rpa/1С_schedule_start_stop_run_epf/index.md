@@ -2,7 +2,7 @@
 title: Запуск 1С по расписанию и вызов обработки
 ---
 
-[git](git@github.com:skyq/schedule_1C_epf.git)
+[git](https://github.com/skyq/schedule_1C_epf)
 
 Каждое утро мне нужно было запускать в 1С одну очень полезную обработку, а вечером тушить 1С.
 
