@@ -83,7 +83,7 @@ if __name__ == '__main__':
 Первый способ - найдем изображение кнопки информации 1С
 ![кнопка информации 1С](./info.png)
 
-Для лаконичности кода методы для работы с PyAutoGUI я вынес в [отдельную статью](./posts/rpa/pyautogui_methods/)
+Для лаконичности кода методы для работы с PyAutoGUI я вынес в [отдельную статью](/posts/rpa/pyautogui_methods/)
 
 ```python
 import pyautogui
