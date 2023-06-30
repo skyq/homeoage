@@ -4,7 +4,8 @@ title: Методы для работы с pyautogui
 
 [git](https://github.com/skyq/rpa_pyautogui_methods)
 
-На нескольких проектах использовал [PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/install.html) и само собой набрался файлик с методами для удобной работы с этой библиотекой.
+На нескольких проектах использовал [PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/install.html) и само собой
+набрался файлик с методами для удобной работы с этой библиотекой.
 
 Все изображения храним в папке `img`
 
@@ -125,4 +126,18 @@ def screenshot(img, region=None):
     else:
         pyautogui.screenshot(join(screenshots_dir, img), region=region)
 
+```
+
+За этой библиотекой были замечаны ошибки ввода текста и вызова hotkey если раскладка языка установлена на RUS. Тут
+иногда помогает библиотека [keyboard](https://pypi.org/project/keyboard/) и для нее пригодился вот такой метод в ходе
+работы:
+
+```python 
+import keyboard
+
+def press(key, presses=1, interval=0.2):
+    for i in range(0, presses):
+        keyboard.send(key)
+        if interval > 0:
+            time.sleep(interval)
 ```
